@@ -1,0 +1,13 @@
+_navigateTo("http://qa-bzu.club/login");
+_setValue(_textbox("username"), "ada@eye.com");
+_setValue(_password("password"), "123");
+_click(_submit("Login"));
+_click(_link(4));
+_click(_link("Emails audit"));
+_setValue(_textbox("start_date"), "2018-01-13");
+_setValue(_textbox("end_date"), "2018-01-15");
+_click(_submit("Filter"));
+_assertExists(_link("Mira K"));
+_assert(_isVisible(_link("Mira K")));
+_assertEqual("Mira K", _getText(_link("Mira K")));
+_assertContainsText("Mira K", _link("Mira K"));

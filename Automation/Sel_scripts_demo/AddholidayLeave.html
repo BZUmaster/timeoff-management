@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://qa-bzu.club/login/" />
+<title>AddHolidayLeave</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AddHolidayLeave</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email_inp</td>
+	<td>selcomp@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass_inp</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.dropdown-toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=General</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p.lead</td>
+	<td>Account main settings</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_new_bank_holiday_btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bank_holiday_name_new</td>
+	<td>Holiday1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=bank_holiday_date_new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[4]/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.modal-footer &gt; button.btn.btn-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>Changes to bank holidays were saved</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_new_leave_type_btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=leave_type_name_new</td>
+	<td>Work from home</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=leave_type_use_allovance_new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=leave_type_limit_new</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#leave_type_new_form &gt; div.modal-footer &gt; button.btn.btn-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>Changes to leave types were saved</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=me_menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Logout')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Time Off Management</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

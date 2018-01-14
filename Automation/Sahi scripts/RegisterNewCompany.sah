@@ -1,0 +1,13 @@
+_navigateTo("http://qa-bzu.club/login/");
+_click(_link("Register new company"));
+_setValue(_textbox("company_name"), "Eye");
+_setValue(_textbox("name"), "AD");
+_setValue(_textbox("lastname"), "DA");
+_setValue(_password("password"), "123");
+_setValue(_password("password_confirmed"), "123");
+_setValue(_emailbox("email"), "ada@eye.com");
+_click(_submit("Create"));
+_click(_div("container"));
+_click(_link("Me"));
+_click(_link("Logout[1]"));
+_click(_submit("Login"));

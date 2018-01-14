@@ -1,0 +1,11 @@
+_navigateTo("http://qa-bzu.club/login");
+_click(_link("Register new company"));
+_setValue(_textbox("company_name"), "aa");
+_setValue(_textbox("name"), "as");
+_setValue(_textbox("lastname"), "as");
+_setValue(_emailbox("email"), "");
+_setValue(_password("password"), "123");
+_setValue(_password("password_confirmed"), "123");
+_setValue(_emailbox("email"), "ada@eye.com");
+_click(_submit("Create"));
+_click(_div("Failed to register user please contact customer service. Error: Email is already used"));

@@ -1,0 +1,9 @@
+_navigateTo("http://qa-bzu.club");
+_setValue(_textbox("username"), "ada@eye.com");
+_setValue(_password("password"), "123");
+_click(_submit("Login"));
+_click(_link("Team View"));
+_assertExists(_heading1("Team View"));
+_assert(_isVisible(_heading1("Team View")));
+_assertEqual("Team View", _getText(_heading1("Team View")));
+_assertContainsText("Team View", _heading1("Team View"));

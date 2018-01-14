@@ -21,7 +21,7 @@
           {{/if_equal}}
 
           <div class="form-group">
-            <label for="leave_type" class="control-label">Leave type:</label>
+            <label for="leave_type" class="control-label">TimeOff type:</label>
             <select class="form-control" id="leave_type" name="leave_type">
             {{# each logged_user.company.leave_types}}
                 <option value={{@index}}>{{this.name}}</option>
@@ -71,6 +71,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-success">Create</button>
+          <button type="button" class="btn btn-link" data-dismiss="modal">Other</button>
         {{# if redirect_back_to }}
           <input type="hidden" name="redirect_back_to" value="{{redirect_back_to}}">
         {{else}}
